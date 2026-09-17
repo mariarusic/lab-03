@@ -37,7 +37,7 @@ fun CityListScreen(
     var newCityName by remember { mutableStateOf("") }
     var newProvinceName by remember { mutableStateOf("") }
     var showAddCityFields by remember { mutableStateOf(false) }
-    var selectedCity by remember { mutableStateOf<City?>(null) }
+    var selectedCity by remember { mutableStateOf<City?>(null) } //remember selected field
     Column(modifier = modifier.fillMaxSize()) {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -73,7 +73,7 @@ fun CityListScreen(
                     modifier = Modifier.weight(1f)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Button(
+                Button( //add city button
                     modifier = Modifier.padding(vertical = 12.dp),
                     onClick = {
                         if (newCityName.isNotBlank() && newProvinceName.isNotBlank()) {
@@ -99,8 +99,8 @@ fun CityListScreen(
                         if (newCityName.isNotBlank() && newProvinceName.isNotBlank()) {
                             onUpdateCity(
                                 City( //old city
-                                    name = selectedCity!!.name, //non-null asserted
-                                    province = selectedCity!!.province //non-null asserted
+                                    name = selectedCity!!.name, //non-null asserted to appease Android Studio since these two cant be blank
+                                    province = selectedCity!!.province
                                 ),
                                 City( //updated city
                                     name = newCityName,
@@ -109,6 +109,7 @@ fun CityListScreen(
                             )
                             newCityName = ""
                             newProvinceName = ""
+                            selectedCity = null
                             showAddCityFields = false
 
                         }
