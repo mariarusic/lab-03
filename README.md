@@ -2,12 +2,13 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** `Misko Rusic`
+- **CCID:** `rusic`
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+[Not-Null Assertion Operator](https://kotlinlang.org/docs/null-safety.html)
+[Ignoring parameters in expressions with underscores](https://stackoverflow.com/questions/59966334/what-are-underscore-names-in-kotlin-reserved-for)
 
 ## Verbal Collaboration
 
