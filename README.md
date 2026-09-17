@@ -7,8 +7,9 @@
 
 ## References and Resources
 
-[Not-Null Assertion Operator](https://kotlinlang.org/docs/null-safety.html)
-[Ignoring parameters in expressions with underscores](https://stackoverflow.com/questions/59966334/what-are-underscore-names-in-kotlin-reserved-for)
+- [Not-Null Assertion Operator](https://kotlinlang.org/docs/null-safety.html)
+
+- [Ignoring parameters in expressions with underscores](https://stackoverflow.com/questions/59966334/what-are-underscore-names-in-kotlin-reserved-for)
 
 ## Verbal Collaboration
 
